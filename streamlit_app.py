@@ -45,6 +45,8 @@ streamlit.dataframe(my_data_rows)
 #allow user to add fruit to the list
 add_my_fruit = "Jackfruit"
 
+#insert fruit load list by sql
+my_cur.execute(insert into fruit_load_list values ('from streamlit')")
 
 
 
