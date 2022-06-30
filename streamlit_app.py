@@ -21,7 +21,6 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("The fruit list contains")
 streamlit.dataframe(my_data_rows)
 
-from urllib.error import URLerror
 
 # Lets put a pick list here so they can pick fruit they want to include
 fruits_selected = streamlit.multiselect("Pick some fruits:",list(my_fruit_list.index),['Avocado','Strawberries'])
